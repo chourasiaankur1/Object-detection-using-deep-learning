@@ -33,7 +33,6 @@ net = cv2.dnn.readNetFromCaffe(args["prototxt"], args["model"])
 
 # load the input image and construct an input blob for the image
 # by resizing to a fixed 300x300 pixels and then normalizing it
-# (note: normalization is done via the authors of the MobileNet SSD
 # implementation)
 image = cv2.imread(args["image"])
 (h, w) = image.shape[:2]
